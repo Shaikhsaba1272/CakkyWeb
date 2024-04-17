@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style src = "javascripta.js"></style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script>
+
+
+
+</script>
+
+
+</head>
+<style>
+	body{
+		font-size: 14px;
+		font-family: Open-Sans,sans-serif;
+		margin: 0;
+		padding: 0;
+
+	}
+	.head{
+		display: flex;
+		width:100%;
+		height:25px;
+		background: #6c252a;
+		justify-content: center;
+		align-items: center;
+		color: #ffefbb;
+	}
+	.left-head{
+		flex:1;
+		text-align: center;
+	
+
+	}
+	.left-head a{
+		color: #ffefbb;
+	}
+	.middle-head{
+		flex:1;
+	padding-left: 10px;
+	}
+.right-head{
+	display: flex;
+	flex:1;
+	justify-content: center;
+		align-items: center;
+
+
+}
+
+.right-head span{
+	margin-left: 50px;
+}
+
+
+
+@media (max-width:768px){
+	.right-head{
+		padding: 0;
+	margin-left: 5px;
+	font-size: 12px;
+	text-align: center;
+
+
+
+	}
+	.right-head span{
+		padding: 0;
+	margin-left: 5px;
+	font-size: 12px;
+	text-align: center;
+}
+
+	.middle-head{
+		display: none;
+	}
+	.left-head{
+		font-size: 12px;
+	}
+}
+/*SECOND HEADER */
+.header-2{
+	display: flex;
+	align-items: center;
+
+}
+
+
+.header2-left{
+	display: flex;
+	align-items: center;
+	flex:2;
+	justify-content: center;
+
+
+}
+.header2-left ul{
+align-items: center;
+	display: flex;
+	padding-left: 8px;
+}
+ .header2-left ul li a{
+	text-decoration: none;
+	color: #684f40;
+}
+
+.header2-left ul li {
+list-style: none;
+padding: 12px;
+
+}
+.drop-menu ul{
+	display: block;
+}
+.drop-items ul {
+display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    z-index: 1;
+}	
+	
+
+.drop-items ul{
+	
+	padding-left: 8px;
+	margin: 0;
+}
+
+
+
+.drop-items ul li{
+	font-size: 16px;
+	margin-left: -6px;
+}
+
+.drop-items li:hover{
+background-color: brown;
+
+
+
+}
+
+
+.header2-left ul li:hover .drop-items ul {
+	background-color: sandybrown;
+	display: block;
+	color:white;
+
+}
+
+
+/* HEADER-2 MIDDLE */
+.header2-middle{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex:1;
+	margin-left:-20px;
+
+}
+.header2-middle img{
+	width: 55%;
+}
+/* RIGHT HEADER */
+.header2-right{
+	display: flex;
+	align-items: center;
+	flex:2;
+}
+
+
+.right-menu ul{
+display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 4px;
+
+}
+.right-menu ul li{
+		color: #684f40;
+
+	list-style: none;
+	padding: 8px;
+}
+.right-menu ul li a{
+	text-decoration: none;
+		color: #684f40;
+
+}
+
+/* icons*/
+.icons{
+display: flex;
+margin-left: 4px;
+align-items: center;
+justify-content: center;
+
+
+}
+.fa-cart-shopping ,.fa-magnifying-glass, .fa-location-dot{
+padding: 6px 6px;
+    background: #6c252a;
+border-radius: 50px;
+	color: white;
+	margin-right: 5px;
+}
+/* banner image */
+.gallery{
+	display: flex;
+	width:100%;
+	max-width: 1440px;
+	height:600px;
+	margin:auto;
+	position: relative;
+	overflow: hidden;
+	border: 2px solid brown;
+
+
+}
+.images{
+left:0%;
+top:0%;
+margin:5px;
+margin-left: 0;
+width: 100%;
+width: max-content;
+height: 550px;
+
+	}
+
+.images img{
+		width: 1440px;
+
+
+}
+.button-box{
+	position: absolute;
+	display: flex;
+	top: 50%;
+	left:0%;
+	width: 100%;
+	justify-content: space-between;
+}
+.next{
+	position: absolute;
+	top:50%;
+	right: 2%;
+}
+.prev{
+	position: absolute;
+	top:50%;
+	left: 2%;
+}
+
+.button-box button{
+	background-color:tomato;
+	opacity: 0.2px;
+	color: rgb(244, 219, 137);
+	font-weight: 800px;
+	width: 50px;
+	height: 50px;
+border: none;
+border-radius: 50%;
+}
+.button-box button:hover{
+background-color: rgb(96, 60, 9);
+opacity: 1;
+color: aliceblue;
+font: bold;
+}
+
+.dot{
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+	height: 25px;
+	margin: 0;
+	padding: 0;
+	color: #684f40;
+display: flex;
+border:black;
+justify-content: center;
+}
+.dot li{
+display: flex;
+list-style: none;
+color: #684f40;
+background-color: pink;
+width: 15px;
+height: 15px;
+margin: 10px;
+border-radius: 20px;
+
+}
+.dot ul {
+
+	display: flex;
+	align-items: center;
+}
+
+
+</style>
+
+
+<body>
+	<div class="container">
+	<div class="head">
+		<div class="left-head">
+			<a href="example@gmail.com">Example@gmail.com</a>
+		</div>
+		<div class="middle-head">
+			<P> 18002096323 10:30 AM To 5:30 PM</P>
+		</div>
+		<div class="right-head">
+			<p> Login</p>
+			<span> mumbai (Change City)</span>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="header-2">
+	<div class="header2-left">
+
+<ul>
+	<li><a href="#">HOME</a></li>
+			<li><a href="#">ABOUT US</a></li>
+					<li><a href="#">CAKES</a></li>
+					<div class="drop-menu">
+							<li><a href="#">OUR PRODUCTS</a>
+								<i class="fa-solid fa-caret-down"></i>
+								<div class="drop-items">
+									<ul>
+									<li>CAKE</li>
+									<li>PASTIES</li>
+									<li>CUP CAKES</li>
+									<li>MUFFINS</li>
+								</ul>
+							</div>
+
+							</li>
+						</div>
+						</ul>
+
+	</div>
+	<div class="header2-middle">
+		<img src="cakepics/logo2.jpg">
+	</div>
+	<div class="header2-right">
+<div class="right-menu"> 
+	<ul>
+		<li><a href="#">GET FRANCHISE</li>
+		<li><a href="#">T&C</li>
+		<li><a href="#">BLOG</li>
+		<li><a href="#">CONTACT</li>
+
+	</ul>
+</div>
+<div class="icons">
+<i class="fa-solid fa-cart-shopping"></i>
+<i class="fa-solid fa-magnifying-glass"></i>
+<i class="fa-solid fa-location-dot"></i>
+</div>
+
+
+
+
+	</div>
+
+</div>
+
+
+
+<div class="gallery">
+	<div class="images">
+			<img src="cakepics/desktop05.jpg" class = "image-box">
+	</div>
+	<div class="images">
+			<img src="cakepics/desktop05.jpg" class = "image-box">
+	</div>
+	<div class="images">
+			<img src="cakepics/desktop05.jpg" class = "image-box">
+	</div>
+	<div class="images">
+			<img src="cakepics/desktop05.jpg" class = "image-box">
+	</div>
+	<div class="button-box">
+		<button class="prev" > &lt; </button>
+		<button class="next" onclick="
+	
+		
+		
+		
+		" > &gt; </button>
+
+		</div>
+	
+	<div class="dot">
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+
+		</ul>
+	</div>
+
+</div>
+
+</body>
+</html>
